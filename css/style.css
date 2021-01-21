@@ -1,0 +1,80 @@
+body {
+    font: 17px Segoe UI, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .nav {
+    z-index: 1000;
+    position: fixed;
+    overflow: auto;
+    background-color: #333;
+    transition: all 0.5s;
+}
+
+.menu .nav.right{
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+}
+
+.menu .nav.top {
+    width: 100%;
+    height: auto;
+    top: -500px;
+    left: 0;
+}
+
+.menu .toggle-menu {
+    font-size: 22px;
+}
+
+.menu .nav.right.open-menu {
+    right: 0;
+}
+
+.menu .nav.top.open-menu {
+    top: 0;
+}
+
+.menu .nav li {
+    list-style: none;
+    line-height: 2;
+}
+
+.menu .nav .close-menu {
+    float: right;
+    position: relative;
+    right: 15px;
+    top: 5px;
+    font-size: 26px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+}
